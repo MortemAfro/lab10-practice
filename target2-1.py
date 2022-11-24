@@ -18,9 +18,12 @@ def primo(numero):
 
 
 def funcion_nucleo(a,b):
-    x=2345678911111111
-    sumatoria=0
+    numero = 2345678911111111
+    primo = 0
     for i in range(a,b+1):
-        sumatoria = sumatoria + i*(pow(x,i))
-    
-    return sumatoria
+        if (numero % i == 0):
+            primo = primo + 1
+    if (primo==0 and numero>1) :
+        return True
+    else:
+        return False
